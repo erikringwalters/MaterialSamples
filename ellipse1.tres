@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://783j116is2tk"]
+
+[ext_resource type="Shader" path="res://ellipse.gdshader" id="1_g3bg0"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_g3bg0")

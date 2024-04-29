@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=45 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://toon.tres" id="1_e7gce"]
 [ext_resource type="Material" uid="uid://bn2kw1a6m5i34" path="res://checkered.tres" id="2_8yywg"]
@@ -15,6 +15,8 @@
 [ext_resource type="Shader" path="res://gpt-stripes4.gdshader" id="13_rjemf"]
 [ext_resource type="Texture2D" uid="uid://raavv7hj50le" path="res://woodgrain.jpg" id="14_nrsn6"]
 [ext_resource type="Shader" path="res://gpt-uv.gdshader" id="15_7t7p7"]
+[ext_resource type="Shader" path="res://ellipse.gdshader" id="16_g5ybl"]
+[ext_resource type="Shader" path="res://vertex_wave.gdshader" id="17_wys3q"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -108,6 +110,20 @@ shader_parameter/myTexture = ExtResource("14_nrsn6")
 [sub_resource type="SphereMesh" id="SphereMesh_pml4h"]
 material = SubResource("ShaderMaterial_7p1sw")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5bvu6"]
+render_priority = 0
+shader = ExtResource("16_g5ybl")
+
+[sub_resource type="SphereMesh" id="SphereMesh_mewkk"]
+material = SubResource("ShaderMaterial_5bvu6")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3rnkr"]
+render_priority = 0
+shader = ExtResource("17_wys3q")
+
+[sub_resource type="SphereMesh" id="SphereMesh_ph0us"]
+material = SubResource("ShaderMaterial_3rnkr")
+
 [node name="Main" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -172,3 +188,11 @@ surface_material_override/0 = SubResource("ShaderMaterial_33mrg")
 [node name="MeshInstance3D13" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -2, 0)
 mesh = SubResource("SphereMesh_pml4h")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("SphereMesh_mewkk")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 0)
+mesh = SubResource("SphereMesh_ph0us")
