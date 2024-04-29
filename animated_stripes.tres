@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://clkirq2r2388c"]
+
+[ext_resource type="Shader" path="res://wasp_thorax_stripes.gdshader" id="1_s47os"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_s47os")
+shader_parameter/stripe_width = 0.1
+shader_parameter/stripe_colors1 = Vector3(0, 0, 0)
+shader_parameter/stripe_colors2 = Vector3(1, 0.5, 0)
