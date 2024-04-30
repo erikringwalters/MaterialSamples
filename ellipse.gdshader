@@ -6,7 +6,7 @@ void fragment(){
     vec2 uv = UV;
 
 	// width, height
-    float a = 0.125;
+    float a = 0.14;
     float b = 0.35;
     
 	// positions
@@ -15,7 +15,7 @@ void fragment(){
 	float cx = uv.x - 0.5;
 	float cy = uv.y - 0.5;
 	
-	float x_offset = 0.06;
+	float x_offset = 0.07;
 	float y_offset = 0.025;
 	
     float xl = cx + x_offset;
@@ -24,20 +24,16 @@ void fragment(){
     float y = cy + y_offset;
     
     float angle = 3.141592654;
-	
-    float xl2 = xl * cos( angle ) + y * sin( angle );
-    float yl2 = y * cos( angle ) - xl * sin( angle );
-	
-	float xr2 = xr * cos( angle ) + y * sin( angle );
-	float yr2 = y * cos( angle ) - xr * sin( angle );
 
-	
 	float distancel = pow( xl, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
 	float distancer = pow( xr, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
 	
 	vec3 color;    
 	float alpha;
-    if ( distancel <= 0.1 || distancer <= 0.1)
+	
+	float dist_threshold = 0.15;
+	
+    if ( distancel <= dist_threshold || distancer <= dist_threshold)
     {
         color = vec3( 1.0, 1.0, 1.0 );
 		alpha = 1.0;
