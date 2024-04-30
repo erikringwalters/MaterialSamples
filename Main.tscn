@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=44 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://toon.tres" id="1_e7gce"]
 [ext_resource type="Material" uid="uid://bn2kw1a6m5i34" path="res://checkered.tres" id="2_8yywg"]
@@ -15,7 +15,7 @@
 [ext_resource type="Shader" path="res://gpt-stripes4.gdshader" id="13_rjemf"]
 [ext_resource type="Texture2D" uid="uid://raavv7hj50le" path="res://woodgrain.jpg" id="14_nrsn6"]
 [ext_resource type="Shader" path="res://gpt-uv.gdshader" id="15_7t7p7"]
-[ext_resource type="Shader" path="res://ellipse.gdshader" id="16_g5ybl"]
+[ext_resource type="Material" uid="uid://dpobk41b7klps" path="res://eyes.tres" id="16_r2sg1"]
 [ext_resource type="Shader" path="res://vertex_wave.gdshader" id="17_wys3q"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
@@ -110,12 +110,8 @@ shader_parameter/myTexture = ExtResource("14_nrsn6")
 [sub_resource type="SphereMesh" id="SphereMesh_pml4h"]
 material = SubResource("ShaderMaterial_7p1sw")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_5bvu6"]
-render_priority = 0
-shader = ExtResource("16_g5ybl")
-
 [sub_resource type="SphereMesh" id="SphereMesh_mewkk"]
-material = SubResource("ShaderMaterial_5bvu6")
+material = ExtResource("16_r2sg1")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3rnkr"]
 render_priority = 0
