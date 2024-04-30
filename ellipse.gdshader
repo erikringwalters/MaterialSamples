@@ -1,25 +1,43 @@
 shader_type spatial;
+render_mode unshaded;
 
 void fragment(){   
- // Normalized pixel coordinates (from 0 to 1)
+	
     vec2 uv = UV;
 
-	
-    float a = 0.15;
-    float b = 0.4;
+	// width, height
+    float a = 0.125;
+    float b = 0.35;
     
-    float x = uv.x - 0.45;
-    float y = uv.y - 0.5;
+	// positions
+	
+	// center
+	float cx = uv.x - 0.5;
+	float cy = uv.y - 0.5;
+	
+	float x_offset = 0.06;
+	float y_offset = 0.025;
+	
+    float xl = cx + x_offset;
+	float xr = cx - x_offset;
+	
+    float y = cy + y_offset;
     
     float angle = 3.141592654;
-    float x2 = x * cos( angle ) + y * sin( angle );
-    float y2 = y * cos( angle ) - x * sin( angle );
+	
+    float xl2 = xl * cos( angle ) + y * sin( angle );
+    float yl2 = y * cos( angle ) - xl * sin( angle );
+	
+	float xr2 = xr * cos( angle ) + y * sin( angle );
+	float yr2 = y * cos( angle ) - xr * sin( angle );
 
 	
-	float distance = pow( x, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
+	float distancel = pow( xl, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
+	float distancer = pow( xr, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
+	
 	vec3 color;    
 	float alpha;
-    if ( distance <= 0.1 )
+    if ( distancel <= 0.1 || distancer <= 0.1)
     {
         color = vec3( 1.0, 1.0, 1.0 );
 		alpha = 1.0;

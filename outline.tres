@@ -1,6 +1,9 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dpqynuo0wfnvt"]
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dpqynuo0wfnvt"]
+
+[ext_resource type="Material" uid="uid://783j116is2tk" path="res://ellipse1.tres" id="1_bsnlw"]
 
 [resource]
+next_pass = ExtResource("1_bsnlw")
 cull_mode = 1
 shading_mode = 0
 diffuse_mode = 3
