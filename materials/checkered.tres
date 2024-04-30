@@ -1,7 +1,7 @@
 [gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bn2kw1a6m5i34"]
 
-[ext_resource type="Texture2D" uid="uid://cei807qvkqtnx" path="res://CheckeredWhiteGray4x2.png" id="1_6r12x"]
-[ext_resource type="Material" uid="uid://dpqynuo0wfnvt" path="res://outline.tres" id="2_rukp7"]
+[ext_resource type="Texture2D" uid="uid://cei807qvkqtnx" path="res://textures/CheckeredWhiteGray4x2.png" id="1_6r12x"]
+[ext_resource type="Material" uid="uid://dpqynuo0wfnvt" path="res://materials/outline.tres" id="2_rukp7"]
 
 [resource]
 next_pass = ExtResource("2_rukp7")

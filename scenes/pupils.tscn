@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjjf52pdiqwf2"]
+
+[ext_resource type="PackedScene" uid="uid://bykwcr2e765iq" path="res://glb/pupils.glb" id="1_6p5a7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tamw8"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="pupils_node" instance=ExtResource("1_6p5a7")]
+
+[node name="pupils" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_tamw8")

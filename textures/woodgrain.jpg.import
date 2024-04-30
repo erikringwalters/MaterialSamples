@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cei807qvkqtnx"
-path.s3tc="res://.godot/imported/CheckeredWhiteGray4x2.png-13ac4efa4188889db6edbf38e2bc493e.s3tc.ctex"
+uid="uid://raavv7hj50le"
+path.s3tc="res://.godot/imported/woodgrain.jpg-23c0346d375f39d096e0fdca36c81315.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://CheckeredWhiteGray4x2.png"
-dest_files=["res://.godot/imported/CheckeredWhiteGray4x2.png-13ac4efa4188889db6edbf38e2bc493e.s3tc.ctex"]
+source_file="res://textures/woodgrain.jpg"
+dest_files=["res://.godot/imported/woodgrain.jpg-23c0346d375f39d096e0fdca36c81315.s3tc.ctex"]
 
 [params]
 

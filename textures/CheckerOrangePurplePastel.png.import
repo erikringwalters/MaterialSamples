@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvq5bbo7r4e2v"
-path.s3tc="res://.godot/imported/CheckerOrangePurplePastel.png-ba1f27ee685cd649d73dc501a4eb2337.s3tc.ctex"
+path.s3tc="res://.godot/imported/CheckerOrangePurplePastel.png-bdf67e03bfd1d746a34585157d438705.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://CheckerOrangePurplePastel.png"
-dest_files=["res://.godot/imported/CheckerOrangePurplePastel.png-ba1f27ee685cd649d73dc501a4eb2337.s3tc.ctex"]
+source_file="res://textures/CheckerOrangePurplePastel.png"
+dest_files=["res://.godot/imported/CheckerOrangePurplePastel.png-bdf67e03bfd1d746a34585157d438705.s3tc.ctex"]
 
 [params]
 

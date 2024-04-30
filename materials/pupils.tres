@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://djmc08und15py"]
 
-[ext_resource type="Shader" path="res://eye_pupil.gdshader" id="1_8h7j3"]
+[ext_resource type="Shader" path="res://shaders/eye_pupil.gdshader" id="1_8h7j3"]
 
 [resource]
 render_priority = 1

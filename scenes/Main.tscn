@@ -1,47 +1,49 @@
-[gd_scene load_steps=44 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=47 format=3 uid="uid://d2qwr54aqgdjb"]
 
-[ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://toon.tres" id="1_e7gce"]
-[ext_resource type="Material" uid="uid://bn2kw1a6m5i34" path="res://checkered.tres" id="2_8yywg"]
-[ext_resource type="Material" uid="uid://clkirq2r2388c" path="res://animated_stripes.tres" id="3_buyoi"]
-[ext_resource type="Shader" uid="uid://baprrbomlya5c" path="res://dissolve.tres" id="4_it6oq"]
-[ext_resource type="Shader" path="res://flag.gdshader" id="5_dkqld"]
-[ext_resource type="Shader" path="res://stripes.gdshader" id="5_p7rxw"]
-[ext_resource type="Shader" path="res://shaderToyStripes.gdshader" id="8_6gjpe"]
-[ext_resource type="Shader" path="res://shaderToyBasic.gdshader" id="8_bn2h8"]
-[ext_resource type="Shader" path="res://gpt_stripes1.gdshader" id="10_4h6uq"]
-[ext_resource type="Shader" path="res://gpt-stripes.gdshader" id="10_05dqg"]
-[ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://wasp.tscn" id="10_p51an"]
-[ext_resource type="Shader" path="res://gpt-stripes2.gdshader" id="12_1kawb"]
-[ext_resource type="Shader" path="res://gpt-stripes4.gdshader" id="13_rjemf"]
-[ext_resource type="Texture2D" uid="uid://raavv7hj50le" path="res://woodgrain.jpg" id="14_nrsn6"]
-[ext_resource type="Shader" path="res://gpt-uv.gdshader" id="15_7t7p7"]
-[ext_resource type="Material" uid="uid://dpobk41b7klps" path="res://eyes.tres" id="16_r2sg1"]
-[ext_resource type="Shader" path="res://vertex_wave.gdshader" id="17_wys3q"]
+[ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
+[ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
+[ext_resource type="Material" uid="uid://cia60snhkqf26" path="res://materials/berry.tres" id="3_7f5li"]
+[ext_resource type="Material" uid="uid://bn2kw1a6m5i34" path="res://materials/checkered.tres" id="4_c7q70"]
+[ext_resource type="Material" uid="uid://clkirq2r2388c" path="res://materials/animated_stripes.tres" id="5_e0m04"]
+[ext_resource type="Shader" uid="uid://baprrbomlya5c" path="res://materials/dissolve.tres" id="6_qc851"]
+[ext_resource type="Shader" path="res://shaders/flag.gdshader" id="7_ro8mg"]
+[ext_resource type="Shader" path="res://shaders/stripes.gdshader" id="8_mcltj"]
+[ext_resource type="Shader" path="res://shaders/shaderToyBasic.gdshader" id="9_0u1kp"]
+[ext_resource type="Shader" path="res://shaders/shaderToyStripes.gdshader" id="10_ubpn7"]
+[ext_resource type="Shader" path="res://shaders/gpt_stripes1.gdshader" id="11_8b4td"]
+[ext_resource type="Shader" path="res://shaders/gpt-stripes.gdshader" id="12_dtytu"]
+[ext_resource type="Shader" path="res://shaders/gpt-stripes2.gdshader" id="13_w88bm"]
+[ext_resource type="Shader" path="res://shaders/gpt-stripes4.gdshader" id="14_03roj"]
+[ext_resource type="Texture2D" uid="uid://raavv7hj50le" path="res://textures/woodgrain.jpg" id="15_wcoxu"]
+[ext_resource type="Shader" path="res://shaders/gpt-uv.gdshader" id="16_b5a1y"]
+[ext_resource type="Material" uid="uid://dpobk41b7klps" path="res://materials/eyes.tres" id="17_fuxxh"]
+[ext_resource type="Shader" path="res://shaders/vertex_wave.gdshader" id="18_fhj3b"]
+[ext_resource type="PackedScene" uid="uid://dyo8psud4hq4j" path="res://scenes/eyes.tscn" id="19_8c2ix"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_0q3bv"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_o0k3t"]
-material = ExtResource("3_buyoi")
+material = ExtResource("5_e0m04")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vk0qn"]
 render_priority = 0
-shader = ExtResource("4_it6oq")
+shader = ExtResource("6_qc851")
 
 [sub_resource type="SphereMesh" id="SphereMesh_k0735"]
 material = SubResource("ShaderMaterial_vk0qn")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sf1n5"]
 render_priority = 0
-shader = ExtResource("5_dkqld")
+shader = ExtResource("7_ro8mg")
 
 [sub_resource type="SphereMesh" id="SphereMesh_3pytp"]
 material = SubResource("ShaderMaterial_sf1n5")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_m6ft8"]
 render_priority = 0
-shader = ExtResource("5_p7rxw")
+shader = ExtResource("8_mcltj")
 
 [sub_resource type="SphereMesh" id="SphereMesh_xwmvq"]
 lightmap_size_hint = Vector2i(17, 9)
@@ -49,14 +51,14 @@ material = SubResource("ShaderMaterial_m6ft8")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7dk5l"]
 render_priority = 0
-shader = ExtResource("8_bn2h8")
+shader = ExtResource("9_0u1kp")
 
 [sub_resource type="SphereMesh" id="SphereMesh_ek2j4"]
 material = SubResource("ShaderMaterial_7dk5l")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jo0q8"]
 render_priority = 0
-shader = ExtResource("8_6gjpe")
+shader = ExtResource("10_ubpn7")
 shader_parameter/frequency = 10.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_hyxlg"]
@@ -64,7 +66,7 @@ material = SubResource("ShaderMaterial_jo0q8")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7mdmb"]
 render_priority = 0
-shader = ExtResource("10_4h6uq")
+shader = ExtResource("11_8b4td")
 shader_parameter/stripe_width = 0.1
 shader_parameter/stripe_colors1 = Vector3(0, 0, 0)
 shader_parameter/stripe_colors2 = Vector3(1, 1, 0)
@@ -74,7 +76,7 @@ material = SubResource("ShaderMaterial_7mdmb")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qnppa"]
 render_priority = 0
-shader = ExtResource("10_05dqg")
+shader = ExtResource("12_dtytu")
 shader_parameter/stripe_frequency = 9.05
 shader_parameter/stripe_thickness = 0.05
 shader_parameter/stripe_color = Vector3(1, 1, 1)
@@ -84,7 +86,7 @@ material = SubResource("ShaderMaterial_qnppa")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1pyo1"]
 render_priority = 0
-shader = ExtResource("12_1kawb")
+shader = ExtResource("13_w88bm")
 shader_parameter/stripe_frequency = 9.97
 shader_parameter/stripe_thickness = 0.05
 shader_parameter/stripe_color = Vector3(1, 1, 1)
@@ -96,29 +98,32 @@ material = SubResource("ShaderMaterial_1pyo1")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_33mrg"]
 render_priority = 0
-shader = ExtResource("13_rjemf")
-shader_parameter/myTexture = ExtResource("14_nrsn6")
+shader = ExtResource("14_03roj")
+shader_parameter/myTexture = ExtResource("15_wcoxu")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7p1sw"]
 render_priority = 0
-shader = ExtResource("15_7t7p7")
+shader = ExtResource("16_b5a1y")
 shader_parameter/model_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
 shader_parameter/object_position = null
 shader_parameter/uv_scale_factor = Vector2(1, 1)
-shader_parameter/myTexture = ExtResource("14_nrsn6")
+shader_parameter/myTexture = ExtResource("15_wcoxu")
 
 [sub_resource type="SphereMesh" id="SphereMesh_pml4h"]
 material = SubResource("ShaderMaterial_7p1sw")
 
 [sub_resource type="SphereMesh" id="SphereMesh_mewkk"]
-material = ExtResource("16_r2sg1")
+material = ExtResource("17_fuxxh")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3rnkr"]
 render_priority = 0
-shader = ExtResource("17_wys3q")
+shader = ExtResource("18_fhj3b")
 
 [sub_resource type="SphereMesh" id="SphereMesh_ph0us"]
 material = SubResource("ShaderMaterial_3rnkr")
+
+[sub_resource type="SphereMesh" id="SphereMesh_sac21"]
+material = ExtResource("3_7f5li")
 
 [node name="Main" type="Node3D"]
 
@@ -128,16 +133,16 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.866025, 0.5, 0, -0.5, -0.866025, 0, 6, 0)
 
-[node name="wasp" parent="." instance=ExtResource("10_p51an")]
+[node name="wasp" parent="." instance=ExtResource("1_kyvhf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_override = ExtResource("1_e7gce")
+material_override = ExtResource("2_a6btv")
 mesh = SubResource("SphereMesh_4dw1d")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
-material_override = ExtResource("2_8yywg")
+material_override = ExtResource("4_c7q70")
 mesh = SubResource("SphereMesh_0q3bv")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
@@ -192,3 +197,14 @@ mesh = SubResource("SphereMesh_mewkk")
 [node name="MeshInstance3D15" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 mesh = SubResource("SphereMesh_ph0us")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 0)
+material_override = ExtResource("2_a6btv")
+mesh = SubResource("SphereMesh_sac21")
+
+[node name="Eyes" parent="." instance=ExtResource("19_8c2ix")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2, 2, 0)
+
+[node name="Eyes2" parent="." instance=ExtResource("19_8c2ix")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 2, 0)

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyo8psud4hq4j"]
+
+[ext_resource type="PackedScene" uid="uid://d02d4wx5qxs6p" path="res://scenes/eye_whites.tscn" id="1_n4iiv"]
+[ext_resource type="PackedScene" uid="uid://bjjf52pdiqwf2" path="res://scenes/pupils.tscn" id="2_yknw3"]
+
+[node name="Eyes" type="Node3D"]
+
+[node name="eyes" parent="." instance=ExtResource("1_n4iiv")]
+
+[node name="pupils_node" parent="eyes" instance=ExtResource("2_yknw3")]

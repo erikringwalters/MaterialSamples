@@ -3,18 +3,18 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://1342xyl0akrx"
-path="res://.godot/imported/wasp.glb-ad45ea0430e24c4ec6717d84181c4b1b.scn"
+uid="uid://bykwcr2e765iq"
+path="res://.godot/imported/pupils.glb-bb356fd7a08da23d12cf16e9c9e15327.scn"
 
 [deps]
 
-source_file="res://wasp.glb"
-dest_files=["res://.godot/imported/wasp.glb-ad45ea0430e24c4ec6717d84181c4b1b.scn"]
+source_file="res://glb/pupils.glb"
+dest_files=["res://.godot/imported/pupils.glb-bb356fd7a08da23d12cf16e9c9e15327.scn"]
 
 [params]
 
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
+nodes/root_type=""
+nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
@@ -30,5 +30,5 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={}
-gltf/naming_version=0
+gltf/naming_version=1
 gltf/embedded_image_handling=1

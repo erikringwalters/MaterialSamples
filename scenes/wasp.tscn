@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c5wcmpcv1kyii"]
 
-[ext_resource type="PackedScene" uid="uid://1342xyl0akrx" path="res://wasp.glb" id="1_c1swn"]
-[ext_resource type="Shader" path="res://stripes.gdshader" id="2_t2jl0"]
-[ext_resource type="Material" uid="uid://clkirq2r2388c" path="res://animated_stripes.tres" id="3_dgklc"]
+[ext_resource type="PackedScene" uid="uid://1342xyl0akrx" path="res://glb/wasp.glb" id="1_c1swn"]
+[ext_resource type="Shader" path="res://shaders/stripes.gdshader" id="2_t2jl0"]
+[ext_resource type="Material" uid="uid://clkirq2r2388c" path="res://materials/animated_stripes.tres" id="3_dgklc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_57dhs"]
 render_priority = 0

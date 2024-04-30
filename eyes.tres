@@ -1,9 +1,0 @@
-[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dpobk41b7klps"]
-
-[ext_resource type="Material" uid="uid://djmc08und15py" path="res://pupils.tres" id="1_kut8v"]
-[ext_resource type="Shader" path="res://eye_white.gdshader" id="1_vkeqj"]
-
-[resource]
-render_priority = 0
-next_pass = ExtResource("1_kut8v")
-shader = ExtResource("1_vkeqj")

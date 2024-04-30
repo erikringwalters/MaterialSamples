@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d02d4wx5qxs6p"]
+
+[ext_resource type="PackedScene" uid="uid://dyffd86ma5y6t" path="res://glb/eyes.glb" id="1_dqr76"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3ixv"]
+shading_mode = 0
+
+[node name="eyes" instance=ExtResource("1_dqr76")]
+
+[node name="Eyes" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_e3ixv")

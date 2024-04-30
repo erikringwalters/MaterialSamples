@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://clkirq2r2388c"]
 
-[ext_resource type="Shader" path="res://wasp_thorax_stripes.gdshader" id="1_s47os"]
+[ext_resource type="Shader" path="res://shaders/wasp_thorax_stripes.gdshader" id="1_s47os"]
 
 [resource]
 render_priority = 0
