@@ -1,14 +1,14 @@
 shader_type spatial;
 
 void vertex() {
-	VERTEX.y += sin(TIME * 5.0 + VERTEX.x * 1.5) * 0.5;
+	VERTEX.y += sin(TIME * 5.0 + VERTEX.x * 1.5) * 0.05;
 }
 
 void fragment() {
 	vec3 color;
-	color.r = (sin(TIME * 6.0 + VERTEX.x * 10.0) + 1.0) * 2.0;
-	color.g = (sin(TIME * 5.0 + VERTEX.x * 10.0) + 1.0) * 2.0;
-	color.b = (sin(TIME * 5.0 + VERTEX.x * 10.0) + 1.0) * 2.0;
+	color.r = (sin(TIME * 6.0 + VERTEX.x * 10.0) + 1.0) * 0.5;
+	color.g = (sin(TIME * 5.0 + VERTEX.x * 10.0) + 1.0) * 0.5;
+	color.b = (sin(TIME * 5.0 + VERTEX.x * 10.0) + 1.0) * 0.5;
 	ALBEDO = color;
 }
 
