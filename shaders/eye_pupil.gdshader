@@ -6,8 +6,8 @@ void fragment(){
     vec2 uv = UV;
 
 	// width, height
-    float a = 0.09;
-    float b = 0.225;
+    float a = 0.1;
+    float b = 0.25;
     
 	// positions
 	
@@ -16,7 +16,7 @@ void fragment(){
 	float cy = uv.y - 0.5;
 	
 	float x_offset = 0.065;
-	float y_offset = 0.0;
+	float y_offset = 0.03;
 	
     float xl = cx + x_offset;
 	float xr = cx - x_offset;

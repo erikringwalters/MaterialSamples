@@ -1,7 +1,7 @@
 shader_type spatial;
 
 void vertex() {
-	VERTEX.y += sin(TIME * 5.0 + VERTEX.x * 1.5) * 0.05;
+	VERTEX.y += sin(TIME * 5.0 + VERTEX.x * 1.5) * 1.0;
 }
 
 void fragment() {
