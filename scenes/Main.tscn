@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=54 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
@@ -20,6 +20,7 @@
 [ext_resource type="Material" uid="uid://cia60snhkqf26" path="res://materials/berry_outline_eyes.tres" id="18_kecmh"]
 [ext_resource type="PackedScene" uid="uid://dyo8psud4hq4j" path="res://scenes/eyes.tscn" id="19_8c2ix"]
 [ext_resource type="Shader" path="res://shaders/smoothstep_aa.gdshader" id="20_63ud5"]
+[ext_resource type="Shader" path="res://shaders/smoothstep_uv_aa.gdshader" id="21_pyjr7"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -141,6 +142,13 @@ shader = ExtResource("20_63ud5")
 [sub_resource type="SphereMesh" id="SphereMesh_l460y"]
 material = SubResource("ShaderMaterial_a4t5r")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_demu6"]
+render_priority = 0
+shader = ExtResource("21_pyjr7")
+
+[sub_resource type="SphereMesh" id="SphereMesh_478dv"]
+material = SubResource("ShaderMaterial_demu6")
+
 [node name="Main" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -218,6 +226,9 @@ mesh = SubResource("SphereMesh_ph0us")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 0)
 mesh = SubResource("SphereMesh_3vorm")
 
+[node name="Eyes2" parent="." instance=ExtResource("19_8c2ix")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 2, 0)
+
 [node name="MeshInstance3D17" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 0)
 material_override = ExtResource("2_a6btv")
@@ -226,9 +237,10 @@ mesh = SubResource("SphereMesh_4dw1d")
 [node name="Eyes" parent="." instance=ExtResource("19_8c2ix")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 2, 0)
 
-[node name="Eyes2" parent="." instance=ExtResource("19_8c2ix")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 2, 0)
-
 [node name="MeshInstance3D18" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 0)
 mesh = SubResource("SphereMesh_l460y")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 0)
+mesh = SubResource("SphereMesh_478dv")
