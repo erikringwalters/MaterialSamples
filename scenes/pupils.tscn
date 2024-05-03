@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bykwcr2e765iq" path="res://glb/pupils.glb" id="1_6p5a7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tamw8"]
+render_priority = 1
 shading_mode = 0
 albedo_color = Color(0, 0, 0, 1)
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=51 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
@@ -19,6 +19,7 @@
 [ext_resource type="Shader" path="res://shaders/vertex_wave.gdshader" id="18_fhj3b"]
 [ext_resource type="Material" uid="uid://cia60snhkqf26" path="res://materials/berry_outline_eyes.tres" id="18_kecmh"]
 [ext_resource type="PackedScene" uid="uid://dyo8psud4hq4j" path="res://scenes/eyes.tscn" id="19_8c2ix"]
+[ext_resource type="Shader" path="res://shaders/smoothstep_aa.gdshader" id="20_63ud5"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -133,6 +134,13 @@ roughness = 0.04
 [sub_resource type="SphereMesh" id="SphereMesh_3vorm"]
 material = SubResource("StandardMaterial3D_rxp8t")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a4t5r"]
+render_priority = 0
+shader = ExtResource("20_63ud5")
+
+[sub_resource type="SphereMesh" id="SphereMesh_l460y"]
+material = SubResource("ShaderMaterial_a4t5r")
+
 [node name="Main" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -220,3 +228,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 2,
 
 [node name="Eyes2" parent="." instance=ExtResource("19_8c2ix")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 2, 0)
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 0)
+mesh = SubResource("SphereMesh_l460y")

@@ -1,8 +1,10 @@
 shader_type spatial;
 render_mode unshaded;
 
+
 void fragment(){   
 	
+
     vec2 uv = UV;
 
 	// width, height
@@ -30,7 +32,7 @@ void fragment(){
 	
 	vec3 color = vec3( 1.0, 1.0, 1.0 );  
 	float alpha;
-	
+	vec2 R = vec2(0.5, 0.5) / uv; // you'll have to pass or hardcode it
 	float dist_threshold = 0.15;
 	
     if ( distancel <= dist_threshold || distancer <= dist_threshold)
