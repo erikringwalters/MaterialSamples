@@ -19,8 +19,8 @@
 [ext_resource type="Shader" path="res://shaders/vertex_wave.gdshader" id="18_fhj3b"]
 [ext_resource type="Material" uid="uid://cia60snhkqf26" path="res://materials/berry_outline_eyes.tres" id="18_kecmh"]
 [ext_resource type="PackedScene" uid="uid://dyo8psud4hq4j" path="res://scenes/eyes.tscn" id="19_8c2ix"]
-[ext_resource type="Shader" path="res://shaders/smoothstep_aa.gdshader" id="20_63ud5"]
-[ext_resource type="Shader" path="res://shaders/smoothstep_uv_aa.gdshader" id="21_pyjr7"]
+[ext_resource type="Shader" path="res://shaders/smoothstep_aa_circle.gdshader" id="20_63ud5"]
+[ext_resource type="Shader" path="res://shaders/smoothstep_uv_aa_circle.gdshader" id="21_pyjr7"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -190,7 +190,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -2, 0)
 mesh = SubResource("SphereMesh_ek2j4")
 
 [node name="MeshInstance3D8" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2, -0.0530472)
 mesh = SubResource("SphereMesh_hyxlg")
 
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="."]
