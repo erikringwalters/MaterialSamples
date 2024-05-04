@@ -31,18 +31,25 @@ void fragment(){
 	float distancer = pow( xr, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
 	
 	vec3 color = vec3( 1.0, 1.0, 1.0 );  
-	float alpha;
-	vec2 R = vec2(0.5, 0.5) / uv; // you'll have to pass or hardcode it
+	ALBEDO = color;
+	float alpha = 0.0;
+	
 	float dist_threshold = 0.15;
 	
-    if ( distancel <= dist_threshold || distancer <= dist_threshold)
-    {
-		alpha = 1.0;
-    }
-    else
-    { 
-		alpha = 0.0;
-    }
-	ALBEDO = color;
+	float aa = sqrt(2.0)/VIEWPORT_SIZE.y;
+	// draw left eye
+	alpha = mix(alpha, 1.0, smoothstep(aa, -aa, distancel - dist_threshold));
+	// draw right eye
+	alpha = mix(alpha, 1.0, smoothstep(aa, -aa, distancer - dist_threshold));
+
+	// // old process ( needed anti-aliasing )
+    //if ( distancel <= dist_threshold || distancer <= dist_threshold)
+    //{
+		//alpha = 1.0;
+    //}
+    //else
+    //{ 
+		//alpha = 0.0;
+    //}
 	ALPHA = alpha;
 }
