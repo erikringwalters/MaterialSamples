@@ -16,23 +16,24 @@ void fragment(){
 	float x_offset = 0.065;
 	float y_offset = 0.03;
 	
-    float xl = c.x + x_offset;
-	float xr = c.x - x_offset;
+    float xl = cx + x_offset;
+	float xr = cx - x_offset;
 	
-    float y = c.y + y_offset;
+    float y = cy + y_offset;
     
     float angle = PI;
 
 	float distancel = pow( xl, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
 	float distancer = pow( xr, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
 	
-	vec3 color = vec3( 0.0, 0.0, 0.0 );   
+	vec3 color = vec3( 0.0, 0.0, 0.0 );  
 	ALBEDO = color;
 	float alpha = 0.0;
 	
 	float dist_threshold = 0.15;
 	
-	float aa = sqrt(2.0)/VIEWPORT_SIZE.y;
+	// originally 2
+	float aa = sqrt(25.0)/VIEWPORT_SIZE.y;
 	// draw left eye
 	alpha = mix(alpha, 1.0, smoothstep(aa, -aa, distancel - dist_threshold));
 	// draw right eye

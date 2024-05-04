@@ -25,7 +25,7 @@ void fragment(){
 	
     float y = cy + y_offset;
     
-    float angle = 3.141592654;
+    float angle = PI;
 
 	float distancel = pow( xl, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
 	float distancer = pow( xr, 2.0 ) / ( a * a ) + pow( y, 2.0 ) / ( b * b );
@@ -36,7 +36,7 @@ void fragment(){
 	
 	float dist_threshold = 0.15;
 	
-	float aa = sqrt(2.0)/VIEWPORT_SIZE.y;
+	float aa = sqrt(25.0)/VIEWPORT_SIZE.y;
 	// draw left eye
 	alpha = mix(alpha, 1.0, smoothstep(aa, -aa, distancel - dist_threshold));
 	// draw right eye
