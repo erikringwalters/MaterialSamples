@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://crkfnd05fdhac"]
+
+[ext_resource type="Shader" path="res://shaders/glass_bottle.gdshader" id="1_2by4y"]
+[ext_resource type="Material" uid="uid://b00nnt515wjgk" path="res://materials/liquid.tres" id="1_whw8s"]
+
+[resource]
+render_priority = 0
+next_pass = ExtResource("1_whw8s")
+shader = ExtResource("1_2by4y")
+shader_parameter/AlphaAmount = 0.25
+shader_parameter/Metallic = 0.75
+shader_parameter/Roughness = 0.25
+shader_parameter/Rim = 0.5
+shader_parameter/RimTint = 0.5
+shader_parameter/Specular = 0.5

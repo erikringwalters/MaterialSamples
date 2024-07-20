@@ -1,0 +1,13 @@
+[gd_scene load_steps=5 format=3 uid="uid://dygxtrfm672ku"]
+
+[ext_resource type="Material" uid="uid://crkfnd05fdhac" path="res://materials/glass_bottle.tres" id="1_watmn"]
+[ext_resource type="Script" path="res://scripts/potion_bottle.gd" id="2_6aof4"]
+[ext_resource type="Material" uid="uid://b00nnt515wjgk" path="res://materials/liquid.tres" id="3_u15v3"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_or5bc"]
+
+[node name="MeshInstance3D20" type="MeshInstance3D"]
+mesh = SubResource("SphereMesh_or5bc")
+surface_material_override/0 = ExtResource("1_watmn")
+script = ExtResource("2_6aof4")
+liquidShaderMaterial = ExtResource("3_u15v3")

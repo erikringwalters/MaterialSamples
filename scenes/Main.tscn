@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=55 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dyo8psud4hq4j" path="res://scenes/eyes.tscn" id="19_8c2ix"]
 [ext_resource type="Shader" path="res://shaders/smoothstep_aa_circle.gdshader" id="20_63ud5"]
 [ext_resource type="Shader" path="res://shaders/smoothstep_uv_aa_circle.gdshader" id="21_pyjr7"]
+[ext_resource type="PackedScene" uid="uid://dygxtrfm672ku" path="res://scenes/potion_bottle.tscn" id="22_1o16y"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -152,7 +153,7 @@ material = SubResource("ShaderMaterial_demu6")
 [node name="Main" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3, 2, -5)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -8)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.866025, 0.5, 0, -0.5, -0.866025, 0, 6, 0)
@@ -244,3 +245,6 @@ mesh = SubResource("SphereMesh_l460y")
 [node name="MeshInstance3D19" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 0)
 mesh = SubResource("SphereMesh_478dv")
+
+[node name="MeshInstance3D20" parent="." instance=ExtResource("22_1o16y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
