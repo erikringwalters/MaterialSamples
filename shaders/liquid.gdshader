@@ -8,6 +8,7 @@ uniform float vel; // Rate of change of the coefficients.
 group_uniforms Visuals;
 uniform vec4 liquid_color     : source_color = vec4(0.7, 0.1, 0.6, 1.0);
 uniform vec4 foam_color       : source_color = vec4(0.9f, 0.3, 0.8, 1.0);
+uniform vec4 emission_color   : source_color = vec4(0.7, 0.1, 0.6, 1.0);
 uniform float foam_line       : hint_range(0.0, 1.0, 0.001) = 0.2;
 uniform float fill_amount     : hint_range(0.0, 1.0, 0.001) = 0.5;
 uniform vec2 size             = vec2(1.0, 1.0);
@@ -66,13 +67,15 @@ void fragment() {
 		float foam       = smoothstep(liquid_line - foam_line * scale * rot_scale, liquid_line,pos.y);
 		vec3 normal_foam = mix (NORMAL, vec3(coeff.x, 1.0, coeff.y), foam);
 		vec3 color_foam  = mix(liquid_color.xyz, foam_color.xyz, foam);
-		ALBEDO           = mix(liquid_color.xyz, color_foam, vel);
+		ALBEDO           = mix(liquid_color.xyz, color_foam, 0.1);
 		NORMAL           = mix(NORMAL, normal_foam, vel);
+		EMISSION         = mix(emission_color.xyz, liquid_color.xyz, 0.1);
 	}
 	else
 	{
-		ALBEDO = mix(liquid_color.xyz, foam_color.xyz, vel);
+		ALBEDO = mix(liquid_color.xyz, foam_color.xyz, 0.1);
 		NORMAL = vec3(coeff.x, 1.0, coeff.y);
+		EMISSION = mix(emission_color.xyz, liquid_color.xyz, 0.9);
 	}
 }
 

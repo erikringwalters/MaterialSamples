@@ -7,25 +7,27 @@
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_f66gu"]
 width = 32
 height = 32
+in_3d_space = true
 seamless = true
 noise = SubResource("FastNoiseLite_tknsr")
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_pl24i")
-shader_parameter/coeff = Vector2(2.8026e-45, 0)
+shader_parameter/coeff = Vector2(0.0112522, 0)
 shader_parameter/vel = 0.0
-shader_parameter/liquid_color = Color(0.797391, 1.92523e-07, 0.406474, 1)
-shader_parameter/foam_color = Color(0.762986, 0.76339, 0.753871, 1)
+shader_parameter/liquid_color = Color(0.999977, 0.335583, 0.432986, 1)
+shader_parameter/foam_color = Color(1, 1, 1, 1)
+shader_parameter/emission_color = Color(0.709077, 0, 0.1219, 1)
 shader_parameter/foam_line = 0.2
 shader_parameter/fill_amount = 0.5
 shader_parameter/size = Vector2(1, 1)
-shader_parameter/glass_thickness = 0.1
+shader_parameter/glass_thickness = 0.075
 shader_parameter/scale = 1.0
-shader_parameter/wave_intensity = 0.2
+shader_parameter/wave_intensity = 0.05
 shader_parameter/waves_noise = SubResource("NoiseTexture2D_f66gu")
 shader_parameter/HasBubbles = true
-shader_parameter/AlwaysBubbles = false
+shader_parameter/AlwaysBubbles = true
 shader_parameter/BubbleStrength = 0.5
 shader_parameter/BubbleMask = 0.5
 shader_parameter/BubbleSpeed = Vector2(3, 4)
