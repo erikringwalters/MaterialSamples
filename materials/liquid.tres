@@ -14,7 +14,7 @@ noise = SubResource("FastNoiseLite_tknsr")
 [resource]
 render_priority = 0
 shader = ExtResource("1_pl24i")
-shader_parameter/coeff = Vector2(0.0112522, 0)
+shader_parameter/coeff = Vector2(0, 0)
 shader_parameter/vel = 0.0
 shader_parameter/liquid_color = Color(0.999977, 0.335583, 0.432986, 1)
 shader_parameter/foam_color = Color(1, 1, 1, 1)
