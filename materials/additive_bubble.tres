@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://23cocu7b4d4k"]
+
+[sub_resource type="Gradient" id="Gradient_sttsn"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_pj536"]
+gradient = SubResource("Gradient_sttsn")
+width = 16
+height = 16
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0, 1)
+
+[resource]
+blend_mode = 1
+shading_mode = 0
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.476578, 0.476578, 0.476578, 1)
+albedo_texture = SubResource("GradientTexture2D_pj536")

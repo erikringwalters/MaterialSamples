@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=58 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
@@ -22,6 +22,7 @@
 [ext_resource type="Shader" path="res://shaders/smoothstep_aa_circle.gdshader" id="20_63ud5"]
 [ext_resource type="Shader" path="res://shaders/smoothstep_uv_aa_circle.gdshader" id="21_pyjr7"]
 [ext_resource type="PackedScene" uid="uid://dygxtrfm672ku" path="res://scenes/potion_bottle.tscn" id="22_1o16y"]
+[ext_resource type="Shader" path="res://scenes/soap_bubble.gdshader" id="23_5p8ri"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -150,6 +151,19 @@ shader = ExtResource("21_pyjr7")
 [sub_resource type="SphereMesh" id="SphereMesh_478dv"]
 material = SubResource("ShaderMaterial_demu6")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hnvj8"]
+render_priority = 0
+shader = ExtResource("23_5p8ri")
+shader_parameter/fuwafuwa_speed = 1.5
+shader_parameter/fuwafuwa_size = 0.05
+shader_parameter/outline_color = Color(0.45, 0.7, 1, 1)
+shader_parameter/outline_ratio = 1.0
+shader_parameter/noise_speed = 0.2
+shader_parameter/noise_scale = 0.5
+
+[sub_resource type="SphereMesh" id="SphereMesh_7qpv4"]
+material = SubResource("ShaderMaterial_hnvj8")
+
 [node name="Main" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -248,3 +262,7 @@ mesh = SubResource("SphereMesh_478dv")
 
 [node name="MeshInstance3D20" parent="." instance=ExtResource("22_1o16y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, 0)
+mesh = SubResource("SphereMesh_7qpv4")
