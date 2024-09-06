@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=64 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
@@ -22,7 +22,9 @@
 [ext_resource type="Shader" path="res://shaders/smoothstep_aa_circle.gdshader" id="20_63ud5"]
 [ext_resource type="Shader" path="res://shaders/smoothstep_uv_aa_circle.gdshader" id="21_pyjr7"]
 [ext_resource type="PackedScene" uid="uid://dygxtrfm672ku" path="res://scenes/potion_bottle.tscn" id="22_1o16y"]
-[ext_resource type="Shader" path="res://scenes/soap_bubble.gdshader" id="23_5p8ri"]
+[ext_resource type="Material" uid="uid://div4be1ugksq7" path="res://materials/soap_bubble.tres" id="23_1bd01"]
+[ext_resource type="Material" uid="uid://23cocu7b4d4k" path="res://materials/additive_bubble.tres" id="24_s7nnu"]
+[ext_resource type="Shader" path="res://scenes/fresnel_bubble.gdshader" id="25_2m308"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -151,18 +153,31 @@ shader = ExtResource("21_pyjr7")
 [sub_resource type="SphereMesh" id="SphereMesh_478dv"]
 material = SubResource("ShaderMaterial_demu6")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hnvj8"]
-render_priority = 0
-shader = ExtResource("23_5p8ri")
-shader_parameter/fuwafuwa_speed = 1.5
-shader_parameter/fuwafuwa_size = 0.05
-shader_parameter/outline_color = Color(0.45, 0.7, 1, 1)
-shader_parameter/outline_ratio = 1.0
-shader_parameter/noise_speed = 0.2
-shader_parameter/noise_scale = 0.5
-
 [sub_resource type="SphereMesh" id="SphereMesh_7qpv4"]
-material = SubResource("ShaderMaterial_hnvj8")
+material = ExtResource("23_1bd01")
+
+[sub_resource type="SphereMesh" id="SphereMesh_8n01q"]
+material = ExtResource("24_s7nnu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_imxl6"]
+next_pass = ExtResource("23_1bd01")
+transparency = 1
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.564706, 0.564706, 0.564706, 0.211765)
+metallic = 0.5
+roughness = 0.04
+
+[sub_resource type="SphereMesh" id="SphereMesh_4kcw6"]
+material = SubResource("StandardMaterial3D_imxl6")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_flmsw"]
+render_priority = 0
+shader = ExtResource("25_2m308")
+
+[sub_resource type="SphereMesh" id="SphereMesh_mrtom"]
+material = SubResource("ShaderMaterial_flmsw")
 
 [node name="Main" type="Node3D"]
 
@@ -170,7 +185,7 @@ material = SubResource("ShaderMaterial_hnvj8")
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -8)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.866025, 0.5, 0, -0.5, -0.866025, 0, 6, 0)
+transform = Transform3D(0.866025, -0.25, -0.433013, 0, -0.866025, 0.5, -0.5, -0.433013, -0.75, 0, 6, 0)
 
 [node name="wasp" parent="." instance=ExtResource("1_kyvhf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 0)
@@ -261,8 +276,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 0)
 mesh = SubResource("SphereMesh_478dv")
 
 [node name="MeshInstance3D20" parent="." instance=ExtResource("22_1o16y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4, 0)
 
 [node name="MeshInstance3D21" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, 0)
 mesh = SubResource("SphereMesh_7qpv4")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, 0)
+mesh = SubResource("SphereMesh_8n01q")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, 0)
+mesh = SubResource("SphereMesh_4kcw6")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+mesh = SubResource("SphereMesh_mrtom")
