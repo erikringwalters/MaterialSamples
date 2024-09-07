@@ -6,7 +6,7 @@
 */
 
 shader_type spatial;
-render_mode unshaded, diffuse_toon, specular_toon;
+render_mode unshaded, diffuse_toon, specular_toon, depth_test_disabled;
 
 uniform float fuwafuwa_speed = 5.0;
 uniform float fuwafuwa_size = 0.02;
@@ -53,7 +53,7 @@ void fragment()
 
 	float basic_fresnel = fresnel(2.0, NORMAL, VIEW);
 	
-	float outline_alpha = basic_fresnel * 2.0 * outline_ratio;
+	float outline_alpha = basic_fresnel * outline_ratio;
 	vec3 color = hsv2rgb( outline_alpha - 1.5 + noise_speed * TIME, 1.0, 1.0 ) * noise_scale;
 
 	ALBEDO = mix( base_color * vec3(lightness_factor) + color, outline_color.rgb, max( outline_alpha - 0.5, 0.0 ) );

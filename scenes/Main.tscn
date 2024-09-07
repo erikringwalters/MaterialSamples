@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene load_steps=66 format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
@@ -25,6 +25,7 @@
 [ext_resource type="Material" uid="uid://div4be1ugksq7" path="res://materials/soap_bubble.tres" id="23_1bd01"]
 [ext_resource type="Material" uid="uid://23cocu7b4d4k" path="res://materials/additive_bubble.tres" id="24_s7nnu"]
 [ext_resource type="Shader" path="res://scenes/fresnel_bubble.gdshader" id="25_2m308"]
+[ext_resource type="Material" uid="uid://bp0dnvb7hk86d" path="res://materials/bubble3.tres" id="27_ljqvd"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -186,6 +187,9 @@ shader_parameter/base_color = Vector3(0.3, 0.3, 0.3)
 [sub_resource type="SphereMesh" id="SphereMesh_mrtom"]
 material = SubResource("ShaderMaterial_flmsw")
 
+[sub_resource type="SphereMesh" id="SphereMesh_vdr7e"]
+material = ExtResource("27_ljqvd")
+
 [node name="Main" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -300,3 +304,7 @@ mesh = SubResource("SphereMesh_4kcw6")
 [node name="MeshInstance3D24" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 mesh = SubResource("SphereMesh_mrtom")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 0)
+mesh = SubResource("SphereMesh_vdr7e")

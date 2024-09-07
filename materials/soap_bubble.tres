@@ -1,9 +1,11 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://div4be1ugksq7"]
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://div4be1ugksq7"]
 
+[ext_resource type="Material" uid="uid://brvcbm7i87jfr" path="res://materials/white_outline.tres" id="1_1sa1b"]
 [ext_resource type="Shader" path="res://scenes/soap_bubble.gdshader" id="1_nc4br"]
 
 [resource]
 render_priority = 0
+next_pass = ExtResource("1_1sa1b")
 shader = ExtResource("1_nc4br")
 shader_parameter/fuwafuwa_speed = 2.07
 shader_parameter/fuwafuwa_size = -0.045
