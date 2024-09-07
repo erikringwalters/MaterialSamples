@@ -160,7 +160,6 @@ material = ExtResource("23_1bd01")
 material = ExtResource("24_s7nnu")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_imxl6"]
-next_pass = ExtResource("23_1bd01")
 transparency = 1
 shading_mode = 2
 diffuse_mode = 3
@@ -182,6 +181,7 @@ shader_parameter/outline_ratio = 1.0
 shader_parameter/noise_speed = 0.2
 shader_parameter/noise_scale = 0.5
 shader_parameter/lightness_factor = 1.5
+shader_parameter/base_color = Vector3(0.3, 0.3, 0.3)
 
 [sub_resource type="SphereMesh" id="SphereMesh_mrtom"]
 material = SubResource("ShaderMaterial_flmsw")
