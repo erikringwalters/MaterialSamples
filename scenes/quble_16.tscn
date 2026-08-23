@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c8wrgg7ly5ams"]
+
+[ext_resource type="PackedScene" uid="uid://hds0uffcp8w0" path="res://glb/Quble_16.glb" id="1_iod3t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6no7x"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.04
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iod3t"]
+next_pass = SubResource("StandardMaterial3D_6no7x")
+albedo_color = Color(0.99607843, 0.39607844, 0, 1)
+stencil_mode = 1
+stencil_flags = 2
+stencil_outline_thickness = 0.04
+
+[node name="Quble_16" unique_id=1215262571 instance=ExtResource("1_iod3t")]
+
+[node name="Quble" parent="." index="0" unique_id=571542640]
+transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_iod3t")

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dp68blufey7f2"]
+
+[ext_resource type="PackedScene" uid="uid://t7uij83n7ikx" path="res://glb/PlayButton.glb" id="1_benoo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_benoo"]
+albedo_color = Color(0.34039316, 0.9722697, 0.23350248, 1)
+
+[node name="PlayButton" unique_id=1339336465 instance=ExtResource("1_benoo")]
+
+[node name="PlayButton_002" parent="." index="0" unique_id=1317493624]
+surface_material_override/0 = SubResource("StandardMaterial3D_benoo")

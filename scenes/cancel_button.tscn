@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://pspu0md1273d"]
+
+[ext_resource type="PackedScene" uid="uid://rk7hh57qos2p" path="res://glb/CancelButton.glb" id="1_k5chw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b8ssu"]
+albedo_color = Color(0.48121005, 0.027526163, 0, 1)
+
+[node name="CancelButton" unique_id=1405095899 instance=ExtResource("1_k5chw")]
+
+[node name="CancelButton_002" parent="." index="0" unique_id=305999923]
+surface_material_override/0 = SubResource("StandardMaterial3D_b8ssu")

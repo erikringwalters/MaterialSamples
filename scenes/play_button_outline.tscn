@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://db7g6jeehsa5a"]
+
+[ext_resource type="PackedScene" uid="uid://cvcbbim8xs5jn" path="res://glb/PlayButton_Outline.glb" id="1_0xyxn"]
+[ext_resource type="Material" uid="uid://bcfqu4okixcmq" path="res://materials/outline1.tres" id="2_lb6um"]
+
+[node name="PlayButton_Outline" unique_id=2009237513 instance=ExtResource("1_0xyxn")]
+
+[node name="PlayButton_002" parent="." index="0" unique_id=544495607]
+surface_material_override/0 = ExtResource("2_lb6um")

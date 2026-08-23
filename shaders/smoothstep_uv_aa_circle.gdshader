@@ -19,7 +19,7 @@ void fragment() {
 
     vec3 col = vec3(1.0);
 	float a = 0.0;
-    
+
     // Circle distance field
     float d = length(p) - 0.1;
     // Create a thin outline

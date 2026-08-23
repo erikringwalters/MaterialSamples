@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cenopnet00nif"]
+
+[ext_resource type="PackedScene" uid="uid://do7gam4dvgodj" path="res://glb/Quble_16_Outline.glb" id="1_8u2jy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8ot8"]
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+stencil_mode = 1
+stencil_flags = 2
+stencil_outline_thickness = 0.06
+
+[node name="Quble_16_Outline" unique_id=820111211 instance=ExtResource("1_8u2jy")]
+
+[node name="Quble_001" parent="." index="0" unique_id=675273110]
+surface_material_override/0 = SubResource("StandardMaterial3D_c8ot8")

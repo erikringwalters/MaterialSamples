@@ -1,7 +1,9 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bp0dnvb7hk86d"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bp0dnvb7hk86d"]
 
-[ext_resource type="Shader" path="res://scenes/bubble3.gdshader" id="1_14o2b"]
+[ext_resource type="Shader" uid="uid://bgrvbnl5uc21h" path="res://shaders/bubble3.gdshader" id="1_14o2b"]
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_14o2b")
+shader_parameter/outline_width = 1.0
+shader_parameter/base_color = Color(1, 0, 0, 0)

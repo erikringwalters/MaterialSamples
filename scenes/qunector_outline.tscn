@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://f7agbmq314eq"]
+
+[ext_resource type="PackedScene" uid="uid://n71b7y0w4d2f" path="res://glb/Qunector_Outline.glb" id="1_8y7t7"]
+[ext_resource type="Material" uid="uid://bcfqu4okixcmq" path="res://materials/outline1.tres" id="2_fvcjt"]
+
+[node name="Qunector_Outline" unique_id=2047461430 instance=ExtResource("1_8y7t7")]
+
+[node name="Qnector" parent="." index="0" unique_id=2029595394]
+transform = Transform3D(-4.0214474e-08, 0, -0.38999993, 0, 0.39, 0, 0.92, 0, -1.704744e-08, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_fvcjt")

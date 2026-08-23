@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://2qoomouo1cp2"]
+
+[ext_resource type="PackedScene" uid="uid://dqhvgeutrattc" path="res://glb/Quble_16_NOT_FLAT_Outline.glb" id="1_fd0r5"]
+[ext_resource type="Material" uid="uid://bcfqu4okixcmq" path="res://materials/outline1.tres" id="2_7jufg"]
+
+[node name="Quble_16_NOT_FLAT_Outline" unique_id=757795680 instance=ExtResource("1_fd0r5")]
+
+[node name="Quble" parent="." index="0" unique_id=1426676507]
+transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_7jufg")

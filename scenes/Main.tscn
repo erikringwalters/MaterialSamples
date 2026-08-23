@@ -1,31 +1,43 @@
-[gd_scene load_steps=66 format=3 uid="uid://d2qwr54aqgdjb"]
+[gd_scene format=3 uid="uid://d2qwr54aqgdjb"]
 
 [ext_resource type="PackedScene" uid="uid://c5wcmpcv1kyii" path="res://scenes/wasp.tscn" id="1_kyvhf"]
 [ext_resource type="Material" uid="uid://5nj73cr0qfv" path="res://materials/toon.tres" id="2_a6btv"]
 [ext_resource type="Material" uid="uid://bn2kw1a6m5i34" path="res://materials/checkered.tres" id="4_c7q70"]
 [ext_resource type="Material" uid="uid://clkirq2r2388c" path="res://materials/animated_stripes.tres" id="5_e0m04"]
 [ext_resource type="Shader" uid="uid://baprrbomlya5c" path="res://materials/dissolve.tres" id="6_qc851"]
-[ext_resource type="Shader" path="res://shaders/flag.gdshader" id="7_ro8mg"]
-[ext_resource type="Shader" path="res://shaders/stripes.gdshader" id="8_mcltj"]
-[ext_resource type="Shader" path="res://shaders/shaderToyBasic.gdshader" id="9_0u1kp"]
-[ext_resource type="Shader" path="res://shaders/shaderToyStripes.gdshader" id="10_ubpn7"]
-[ext_resource type="Shader" path="res://shaders/gpt_stripes1.gdshader" id="11_8b4td"]
-[ext_resource type="Shader" path="res://shaders/gpt-stripes.gdshader" id="12_dtytu"]
-[ext_resource type="Shader" path="res://shaders/gpt-stripes2.gdshader" id="13_w88bm"]
-[ext_resource type="Shader" path="res://shaders/gpt-stripes4.gdshader" id="14_03roj"]
+[ext_resource type="Shader" uid="uid://dcaj546s0s0k0" path="res://shaders/flag.gdshader" id="7_ro8mg"]
+[ext_resource type="Shader" uid="uid://dv6hn6msmqklw" path="res://shaders/stripes.gdshader" id="8_mcltj"]
+[ext_resource type="Shader" uid="uid://4t0dpbop8ixl" path="res://shaders/shaderToyBasic.gdshader" id="9_0u1kp"]
+[ext_resource type="Shader" uid="uid://3l6muyfxyemo" path="res://shaders/shaderToyStripes.gdshader" id="10_ubpn7"]
+[ext_resource type="Shader" uid="uid://bdd0ml1cpqug4" path="res://shaders/gpt_stripes1.gdshader" id="11_8b4td"]
+[ext_resource type="Shader" uid="uid://cjtys55kcih3g" path="res://shaders/gpt-stripes.gdshader" id="12_dtytu"]
+[ext_resource type="Shader" uid="uid://bujp1a5t7nnuc" path="res://shaders/gpt-stripes2.gdshader" id="13_w88bm"]
+[ext_resource type="Shader" uid="uid://bhxmtfvnjkkjr" path="res://shaders/gpt-stripes4.gdshader" id="14_03roj"]
 [ext_resource type="Texture2D" uid="uid://raavv7hj50le" path="res://textures/woodgrain.jpg" id="15_wcoxu"]
-[ext_resource type="Shader" path="res://shaders/gpt-uv.gdshader" id="16_b5a1y"]
+[ext_resource type="Shader" uid="uid://3rqvh1wmtf57" path="res://shaders/gpt-uv.gdshader" id="16_b5a1y"]
 [ext_resource type="Material" uid="uid://dpobk41b7klps" path="res://materials/eyes.tres" id="17_fuxxh"]
-[ext_resource type="Shader" path="res://shaders/vertex_wave.gdshader" id="18_fhj3b"]
+[ext_resource type="Shader" uid="uid://dq6r56c777qrc" path="res://shaders/vertex_wave.gdshader" id="18_fhj3b"]
 [ext_resource type="Material" uid="uid://cia60snhkqf26" path="res://materials/berry_outline_eyes.tres" id="18_kecmh"]
 [ext_resource type="PackedScene" uid="uid://dyo8psud4hq4j" path="res://scenes/eyes.tscn" id="19_8c2ix"]
-[ext_resource type="Shader" path="res://shaders/smoothstep_aa_circle.gdshader" id="20_63ud5"]
-[ext_resource type="Shader" path="res://shaders/smoothstep_uv_aa_circle.gdshader" id="21_pyjr7"]
+[ext_resource type="Shader" uid="uid://cngjv5pvhnap0" path="res://shaders/smoothstep_aa_circle.gdshader" id="20_63ud5"]
+[ext_resource type="Shader" uid="uid://bk8ncokxpkoaw" path="res://shaders/smoothstep_uv_aa_circle.gdshader" id="21_pyjr7"]
 [ext_resource type="PackedScene" uid="uid://dygxtrfm672ku" path="res://scenes/potion_bottle.tscn" id="22_1o16y"]
 [ext_resource type="Material" uid="uid://div4be1ugksq7" path="res://materials/soap_bubble.tres" id="23_1bd01"]
 [ext_resource type="Material" uid="uid://23cocu7b4d4k" path="res://materials/additive_bubble.tres" id="24_s7nnu"]
-[ext_resource type="Shader" path="res://scenes/fresnel_bubble.gdshader" id="25_2m308"]
+[ext_resource type="Shader" uid="uid://cw2e8n3c5wsxv" path="res://shaders/fresnel_bubble.gdshader" id="25_2m308"]
+[ext_resource type="Shader" uid="uid://cuqr8do6leomw" path="res://shaders/toon-firerabbit.gdshader" id="27_23ows"]
 [ext_resource type="Material" uid="uid://bp0dnvb7hk86d" path="res://materials/bubble3.tres" id="27_ljqvd"]
+[ext_resource type="Shader" uid="uid://dltmx5t5jnh12" path="res://shaders/toon-unlit.gdshader" id="28_6gsfb"]
+[ext_resource type="Shader" uid="uid://ba1846up7ove1" path="res://shaders/parllax.gdshader" id="29_e2s0e"]
+[ext_resource type="PackedScene" uid="uid://c8wrgg7ly5ams" path="res://scenes/quble_16.tscn" id="30_v0vrg"]
+[ext_resource type="PackedScene" uid="uid://cqjfutdwhsxrp" path="res://scenes/quble_outline_16.tscn" id="31_dg70y"]
+[ext_resource type="PackedScene" uid="uid://2qoomouo1cp2" path="res://scenes/quble_16_not_flat_outline.tscn" id="32_dg70y"]
+[ext_resource type="PackedScene" uid="uid://dp68blufey7f2" path="res://scenes/play_button.tscn" id="33_2c4at"]
+[ext_resource type="PackedScene" uid="uid://db7g6jeehsa5a" path="res://scenes/play_button_outline.tscn" id="34_g6wdg"]
+[ext_resource type="PackedScene" uid="uid://pspu0md1273d" path="res://scenes/cancel_button.tscn" id="35_hq6as"]
+[ext_resource type="PackedScene" uid="uid://c26gbom4aih5m" path="res://scenes/cancel_button_outline.tscn" id="36_kxyth"]
+[ext_resource type="PackedScene" uid="uid://cvkrmb76au16w" path="res://scenes/qunector.tscn" id="37_cobve"]
+[ext_resource type="PackedScene" uid="uid://f7agbmq314eq" path="res://scenes/qunector_outline.tscn" id="38_cmqll"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -111,10 +123,10 @@ shader_parameter/myTexture = ExtResource("15_wcoxu")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7p1sw"]
 render_priority = 0
 shader = ExtResource("16_b5a1y")
-shader_parameter/model_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-shader_parameter/object_position = null
-shader_parameter/uv_scale_factor = Vector2(1, 1)
 shader_parameter/myTexture = ExtResource("15_wcoxu")
+shader_parameter/model_matrix = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/object_position = Vector3(0, 0, 0)
+shader_parameter/uv_scale_factor = Vector2(1, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_pml4h"]
 material = SubResource("ShaderMaterial_7p1sw")
@@ -190,121 +202,194 @@ material = SubResource("ShaderMaterial_flmsw")
 [sub_resource type="SphereMesh" id="SphereMesh_vdr7e"]
 material = ExtResource("27_ljqvd")
 
-[node name="Main" type="Node3D"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nug0t"]
+render_priority = 0
+shader = ExtResource("27_23ows")
+shader_parameter/color = Color(1, 0.4, 0, 1)
+shader_parameter/shadow = 0.0
+shader_parameter/shadow_width = 0.04
+shader_parameter/shadow_color = Color(0, 0, 0, 1)
+shader_parameter/_specular_smoothness = 0.0
+shader_parameter/_specular_strength = 0.727
+shader_parameter/_glossiness = 0.0
+shader_parameter/_rim_size = 1.0
+shader_parameter/_rim_smoothness = 0.0
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[sub_resource type="SphereMesh" id="SphereMesh_ybxci"]
+material = SubResource("ShaderMaterial_nug0t")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vbgeh"]
+render_priority = 0
+shader = ExtResource("28_6gsfb")
+shader_parameter/directional_light = Vector3(-0.5, -0.5, -0.5)
+
+[sub_resource type="SphereMesh" id="SphereMesh_eray2"]
+material = SubResource("ShaderMaterial_vbgeh")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gsxep"]
+render_priority = 0
+shader = ExtResource("29_e2s0e")
+shader_parameter/depth_scale = 0.1
+shader_parameter/discard_boundaries = false
+shader_parameter/emission_energy = 0.0
+shader_parameter/uv1_scale = Vector2(1, 1)
+shader_parameter/uv1_offset = Vector2(0, 0)
+
+[sub_resource type="SphereMesh" id="SphereMesh_v0vrg"]
+
+[node name="Main" type="Node3D" unique_id=34902475]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1313810385]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -8)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.866025, -0.25, -0.433013, 0, -0.866025, 0.5, -0.5, -0.433013, -0.75, 0, 6, 0)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=802994441]
+transform = Transform3D(0.8660253, -0.2500003, -0.43301278, 0, -0.8660252, 0.50000036, -0.50000024, -0.433013, -0.7499997, 0, 11, 0)
 
-[node name="wasp" parent="." instance=ExtResource("1_kyvhf")]
+[node name="wasp" parent="." unique_id=1205660051 instance=ExtResource("1_kyvhf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1590762663]
 material_override = ExtResource("2_a6btv")
 mesh = SubResource("SphereMesh_4dw1d")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=2088767414]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
 material_override = ExtResource("4_c7q70")
 mesh = SubResource("SphereMesh_0q3bv")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=44401228]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 mesh = SubResource("SphereMesh_o0k3t")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1856500715]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 mesh = SubResource("SphereMesh_k0735")
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1671076546]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 mesh = SubResource("SphereMesh_3pytp")
 
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=2008250939]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
 mesh = SubResource("SphereMesh_xwmvq")
 
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="." unique_id=1404018460]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -2, 0)
 mesh = SubResource("SphereMesh_ek2j4")
 
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="." unique_id=614412018]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2, -0.0530472)
 mesh = SubResource("SphereMesh_hyxlg")
 
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=969118466]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -2, 0)
 mesh = SubResource("SphereMesh_eef2t")
 
-[node name="MeshInstance3D10" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="." unique_id=1005437740]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 mesh = SubResource("SphereMesh_ajy06")
 
-[node name="MeshInstance3D11" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="." unique_id=1789658977]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -2, 0)
 mesh = SubResource("SphereMesh_30k7p")
 
-[node name="MeshInstance3D12" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="." unique_id=132249236]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
 mesh = SubResource("SphereMesh_wi10g")
 surface_material_override/0 = SubResource("ShaderMaterial_33mrg")
 
-[node name="MeshInstance3D13" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="." unique_id=1279419653]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -2, 0)
 mesh = SubResource("SphereMesh_pml4h")
 
-[node name="MeshInstance3D14" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="." unique_id=89823038]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 mesh = SubResource("SphereMesh_mewkk")
 
-[node name="MeshInstance3D15" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="." unique_id=1038327014]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 mesh = SubResource("SphereMesh_ph0us")
 
-[node name="MeshInstance3D16" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="." unique_id=998630637]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 0)
 mesh = SubResource("SphereMesh_3vorm")
 
-[node name="Eyes2" parent="." instance=ExtResource("19_8c2ix")]
+[node name="Eyes2" parent="." unique_id=46188803 instance=ExtResource("19_8c2ix")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 2, 0)
 
-[node name="MeshInstance3D17" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="." unique_id=1076863411]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 0)
 material_override = ExtResource("2_a6btv")
 mesh = SubResource("SphereMesh_4dw1d")
 
-[node name="Eyes" parent="." instance=ExtResource("19_8c2ix")]
+[node name="Eyes" parent="." unique_id=1379086902 instance=ExtResource("19_8c2ix")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 2, 0)
 
-[node name="MeshInstance3D18" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="." unique_id=1719153948]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 0)
 mesh = SubResource("SphereMesh_l460y")
 
-[node name="MeshInstance3D19" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="." unique_id=673001571]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 0)
 mesh = SubResource("SphereMesh_478dv")
 
-[node name="MeshInstance3D20" parent="." instance=ExtResource("22_1o16y")]
+[node name="MeshInstance3D20" parent="." unique_id=1353122582 instance=ExtResource("22_1o16y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4, 0)
 
-[node name="MeshInstance3D21" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="." unique_id=971798180]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, 0)
 mesh = SubResource("SphereMesh_7qpv4")
 
-[node name="MeshInstance3D22" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="." unique_id=136222784]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, 0)
 mesh = SubResource("SphereMesh_8n01q")
 
-[node name="MeshInstance3D23" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="." unique_id=1242744877]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, 0)
 mesh = SubResource("SphereMesh_4kcw6")
 
-[node name="MeshInstance3D24" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="." unique_id=1319691561]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 mesh = SubResource("SphereMesh_mrtom")
 
-[node name="MeshInstance3D25" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="." unique_id=1887332143]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 0)
 mesh = SubResource("SphereMesh_vdr7e")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="." unique_id=2087468116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 0)
+mesh = SubResource("SphereMesh_ybxci")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="." unique_id=544294861]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6, 0)
+mesh = SubResource("SphereMesh_eray2")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="." unique_id=1103771290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 6, 0)
+material_override = SubResource("ShaderMaterial_gsxep")
+mesh = SubResource("SphereMesh_v0vrg")
+
+[node name="Quble_16" parent="." unique_id=1215262571 instance=ExtResource("30_v0vrg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6, 0)
+
+[node name="QubleOutline_16" parent="Quble_16" unique_id=1824191349 instance=ExtResource("31_dg70y")]
+
+[node name="Quble_16_NOT_FLAT" parent="." unique_id=353884625 instance=ExtResource("30_v0vrg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+
+[node name="Quble_16_NOT_FLAT_Outline" parent="Quble_16_NOT_FLAT" unique_id=757795680 instance=ExtResource("32_dg70y")]
+
+[node name="PlayButton" parent="." unique_id=1339336465 instance=ExtResource("33_2c4at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 6, 0)
+
+[node name="PlayButton_Outline" parent="PlayButton" unique_id=2009237513 instance=ExtResource("34_g6wdg")]
+
+[node name="CancelButton" parent="." unique_id=1405095899 instance=ExtResource("35_hq6as")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 10, 0)
+
+[node name="CancelButton_Outline" parent="CancelButton" unique_id=548717555 instance=ExtResource("36_kxyth")]
+
+[node name="Qunector" parent="." unique_id=1330599630 instance=ExtResource("37_cobve")]
+transform = Transform3D(-4.371139e-08, 0, 1, -0.70710677, 0.70710677, -3.090862e-08, -0.70710677, -0.70710677, -3.090862e-08, 0, 9, 0)
+
+[node name="Qunector_Outline" parent="Qunector" unique_id=2047461430 instance=ExtResource("38_cmqll")]

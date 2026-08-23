@@ -1,7 +1,7 @@
-[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://div4be1ugksq7"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://div4be1ugksq7"]
 
 [ext_resource type="Material" uid="uid://brvcbm7i87jfr" path="res://materials/white_outline.tres" id="1_1sa1b"]
-[ext_resource type="Shader" path="res://scenes/soap_bubble.gdshader" id="1_nc4br"]
+[ext_resource type="Shader" uid="uid://b2egxyr0u05nw" path="res://shaders/soap_bubble.gdshader" id="1_nc4br"]
 
 [resource]
 render_priority = 0

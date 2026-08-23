@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cvkrmb76au16w"]
+
+[ext_resource type="PackedScene" uid="uid://ddaydwgks2k2q" path="res://glb/Qunector.glb" id="1_mjvlr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjvlr"]
+albedo_color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+
+[node name="Qunector" unique_id=1330599630 instance=ExtResource("1_mjvlr")]
+
+[node name="Qnector" parent="." index="0" unique_id=1960991873]
+transform = Transform3D(0.92, 0, 0, 0, 0.39, 0, 0, 0, 0.39, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_mjvlr")

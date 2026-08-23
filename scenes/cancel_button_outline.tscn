@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c26gbom4aih5m"]
+
+[ext_resource type="PackedScene" uid="uid://d28o50d3qc1oq" path="res://glb/CancelButton_Outline.glb" id="1_1smso"]
+[ext_resource type="Material" uid="uid://bcfqu4okixcmq" path="res://materials/outline1.tres" id="2_nb1jj"]
+
+[node name="CancelButton_Outline" unique_id=548717555 instance=ExtResource("1_1smso")]
+
+[node name="CancelButton_002" parent="." index="0" unique_id=937761555]
+surface_material_override/0 = ExtResource("2_nb1jj")

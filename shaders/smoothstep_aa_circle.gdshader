@@ -18,7 +18,7 @@ void fragment() {
     float aa = sqrt(2.0)/VIEWPORT_SIZE.y;
 
     vec3 col = vec3(0.0);
-    
+
     // Circle distance field
     float d = length(p) - 0.5;
     // Create a thin outline

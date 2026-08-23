@@ -52,7 +52,7 @@ void fragment()
 	//clamp( ( 1.0 - dot( NORMAL, VIEW ) ) * outline_ratio, 0.0, 1.0 );
 
 	float basic_fresnel = fresnel(2.0, NORMAL, VIEW);
-	
+
 	float outline_alpha = basic_fresnel * outline_ratio;
 	vec3 color = hsv2rgb( outline_alpha - 1.5 + noise_speed * TIME, 1.0, 1.0 ) * noise_scale;
 
@@ -61,4 +61,3 @@ void fragment()
 	ROUGHNESS = 0.04;
 	EMISSION = base_color * outline_ratio;
 }
-
