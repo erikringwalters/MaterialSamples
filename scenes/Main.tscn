@@ -38,6 +38,8 @@
 [ext_resource type="PackedScene" uid="uid://c26gbom4aih5m" path="res://scenes/cancel_button_outline.tscn" id="36_kxyth"]
 [ext_resource type="PackedScene" uid="uid://cvkrmb76au16w" path="res://scenes/qunector.tscn" id="37_cobve"]
 [ext_resource type="PackedScene" uid="uid://f7agbmq314eq" path="res://scenes/qunector_outline.tscn" id="38_cmqll"]
+[ext_resource type="PackedScene" uid="uid://b2gaorn4dfc0p" path="res://scenes/quble.tscn" id="39_8cp6k"]
+[ext_resource type="Shader" uid="uid://bfpwcec2mrdi4" path="res://shaders/dither.gdshader" id="40_8b871"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_4dw1d"]
 
@@ -237,6 +239,30 @@ shader_parameter/uv1_offset = Vector2(0, 0)
 
 [sub_resource type="SphereMesh" id="SphereMesh_v0vrg"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_voijr"]
+render_priority = 0
+shader = ExtResource("40_8b871")
+shader_parameter/albedo_color = Color(1, 0.45405328, 0.68831426, 1)
+shader_parameter/use_stepped = true
+shader_parameter/steps = 3.0
+shader_parameter/step_smoothness = 0.3
+shader_parameter/shadow_tint = Color(0, 0, 0, 1)
+shader_parameter/shadow_tint_amount = 0.4
+shader_parameter/specular = 0.0
+shader_parameter/normal_strength = 0.0
+shader_parameter/use_rim = true
+shader_parameter/rim_color = Color(1, 1, 1, 1)
+shader_parameter/rim_amount = 2.0
+shader_parameter/rim_smoothness = 0.2
+shader_parameter/rim_mask_shadow = 1.0
+shader_parameter/rim_blend = 1.0
+shader_parameter/use_pattern = true
+shader_parameter/pattern_uv_mode = 2
+shader_parameter/pattern_tiling = 32.0
+shader_parameter/pattern_amount = 0.5
+shader_parameter/pattern_smoothness = 0.5
+shader_parameter/pattern_blend = 0.2
+
 [node name="Main" type="Node3D" unique_id=34902475]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1313810385]
@@ -393,3 +419,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 10, 0)
 transform = Transform3D(-4.371139e-08, 0, 1, -0.70710677, 0.70710677, -3.090862e-08, -0.70710677, -0.70710677, -3.090862e-08, 0, 9, 0)
 
 [node name="Qunector_Outline" parent="Qunector" unique_id=2047461430 instance=ExtResource("38_cmqll")]
+
+[node name="Quble" parent="." unique_id=862556414 instance=ExtResource("39_8cp6k")]
+transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, 2, 9, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_voijr")
